@@ -1,7 +1,7 @@
 FROM mattrayner/lamp:latest-1604
 
-RUN ["rm -r /app","mkdir /app"]
+RUN ["rm -r /app"]
 
 COPY * /app/
 
-CMD ["/run.sh"]
+CMD ["mkdir /app","/run.sh"]
