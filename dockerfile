@@ -1,5 +1,5 @@
-FROM mattrayner/lamp:latest-1604
-VOLUME . /app/
+FROM jbirch8865/lamp
+
 COPY * /app/
 
 CMD ["/run.sh"]
