@@ -1,7 +1,5 @@
 FROM mattrayner/lamp:latest-1604
-
-RUN ["rm /app/*"]
-
+VOLUME . /app/
 COPY * /app/
 
 CMD ["/run.sh"]
