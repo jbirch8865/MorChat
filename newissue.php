@@ -2,7 +2,7 @@
 	ob_start();
 	session_start();
 	$date = $_POST['date'];
-	$Con = mysqli_connect("localhost","root","","MOR");
+	$Con = mysqli_connect("localhost","webuser","","MOR");
 	$description = str_replace("'", "\'", $_POST['Description']);
 	$name = str_replace("'", "\'", $_POST['Name']);
 	$query = mysqli_query($Con, "INSERT INTO `Issues` SET TimeStamp = '".$date."', Name = '".$name."', Description = '".$description."', user = '".$_SESSION['username']."', category = '".$_POST['category']."'");

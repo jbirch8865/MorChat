@@ -12,7 +12,7 @@
                location.href = location.href;
             }, seconds * 1000);
         };
-
+ 
     $(document).on('keypress click touch input', function() { intvrefresh() });
     intvrefresh();
 
@@ -202,7 +202,7 @@ li a:hover {
 		}
 		return true;
 	}
-$Con = mysqli_connect("localhost","root","","MOR");
+$Con = mysqli_connect("localhost","webuser","","MOR");
 
 	session_start();
 	$categories = mysqli_query($Con, "SELECT * FROM note_categories");

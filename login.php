@@ -17,7 +17,7 @@
 	{
 		$name = $_GET['Station'];
 	}
-	$Con = mysqli_connect("localhost","root","","MOR");
+	$Con = mysqli_connect("localhost","webuser","","MOR");
 	$query = mysqli_query($Con, "INSERT INTO users SET username = '".$name."'");
 	$_SESSION['username'] = $name;
 	setcookie('MorChatUserName',$name);
