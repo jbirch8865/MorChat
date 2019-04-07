@@ -18,9 +18,9 @@
 	}
 	if($_POST['boardcategory'] != 'null')
 	{
-		header('location: index.php?category='.$_POST['boardcategory']);
+		//header('location: index.php?category='.$_POST['boardcategory']);
 	}else
 	{
-		header('location: index.php');		
+		//header('location: index.php');		
 	}
 ?>
